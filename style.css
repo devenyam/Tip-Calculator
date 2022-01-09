@@ -184,7 +184,7 @@ input[type="number"]::-webkit-outer-spin-button {
 /* HOVER STATES */
 
 .tip-grid > *:hover {
-  background: hsl(185, 41%, 84%);
+  background: hsl(172, 67%, 45%);
   color: hsl(183, 100%, 15%);
 }
 
