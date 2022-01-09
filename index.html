@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" href="./images/favicon-32x32.png" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>Tip Calculator App</title>
+  </head>
+  <body>
+    <div class="logo">
+      <img src="./images/logo.svg" alt="" />
+    </div>
+    <div class="container">
+      <div class="calc-section">
+        <form action="">
+          <label>Bill</label>
+          <div class="input-area-1">
+            <img src="./images/icon-dollar.svg" />
+            <div class="input-1">
+              <input type="number" class="bill" min="0" placeholder="0" />
+            </div>
+          </div>
+        </form>
+
+        <form action="" class="tip-label">
+          <label>Select Tip %</label>
+          <div class="tip-grid">
+            <button class="tip" value="0.05">5%</button>
+            <button class="tip" value="0.10">10%</button>
+            <button class="tip" value="0.15">15%</button>
+            <button class="tip" value="0.25">25%</button>
+            <button class="tip" value="0.50">50%</button>
+            <input class="custom" type="number" placeholder="Custom" />
+          </div>
+        </form>
+
+        <form action="" class="result-label">
+          <div class="label2">
+            <label>Number of People</label>
+            <span class="warning-label hidden"
+              ><label for="people">Can't be zero</label></span
+            >
+          </div>
+          <div class="input-area-2">
+            <img src="./images/icon-person.svg" />
+            <div class="input-2">
+              <input
+                type="number"
+                class="num"
+                id="people"
+                min="0"
+                max="100"
+                placeholder="0"
+              />
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <div class="result-section">
+        <div class="amount-section">
+          <div class="tip-section">
+            <h5>Tip amount</h5>
+            <p>/ person</p>
+          </div>
+          <div class="tip-result">
+            <p>$<span class="tip-amount">0</span></p>
+          </div>
+        </div>
+        <div class="amount-section second">
+          <div class="tip-section">
+            <h5>Total</h5>
+            <p>/ person</p>
+          </div>
+          <div class="tip-result">
+            <p>$<span class="total">0</span></p>
+          </div>
+        </div>
+        <div class="reset inactive">
+          <button>Reset</button>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="attribution">
+        Challenge by
+        <a
+          href="https://www.frontendmentor.io/challenges/tip-calculator-app-ugJNGbJUX"
+          target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Devenyam</a>.
+      </div>
+    </footer>
+  </body>
+</html>

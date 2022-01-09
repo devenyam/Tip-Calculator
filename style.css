@@ -1,0 +1,269 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Space Mono";
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background: hsl(185, 41%, 84%);
+  margin-top: 30px;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: hsl(0, 0%, 100%);
+  width: 100%;
+  padding: 20px;
+  margin-top: 30px;
+  border-radius: 20px;
+}
+
+.calc-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-area-1,
+.input-area-2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: hsl(189, 41%, 97%);
+  width: 100%;
+  border: 1px solid transparent;
+  border-radius: 5px;
+}
+
+.input-area-1 img,
+.input-area-2 img {
+  padding: 15px;
+}
+
+.input-1 input,
+.input-2 input {
+  background: transparent;
+  border: none;
+  text-align: end;
+  padding: 15px;
+  font-family: "Space Mono";
+  color: hsl(183, 100%, 15%);
+  font-size: 24px;
+  font-weight: 700;
+  width: 100%;
+}
+
+.input-1 input:focus,
+.input-2 input:focus {
+  outline: none;
+}
+
+.tip-label {
+  margin: 20px 0 10px 0;
+}
+
+.tip-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.tip-grid > * {
+  background: hsl(183, 100%, 15%);
+  padding: 15px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  width: calc(100% - 10px);
+  font-family: "Space Mono";
+  font-size: 24px;
+  color: hsl(0, 0%, 100%);
+  cursor: pointer;
+}
+
+.tip-grid input[type="number"] {
+  background: hsl(189, 41%, 97%);
+  text-align: end;
+  font-weight: 700;
+  color: hsl(183, 100%, 15%);
+}
+
+.input-2 {
+  width: 90%;
+}
+
+.label2 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.warning-label {
+  color: hsl(0, 75%, 47%);
+}
+
+.result-label {
+  margin-top: 20px;
+}
+
+.result-section {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 20px 20px;
+  gap: 30px;
+  background: hsl(183, 100%, 15%);
+  color: hsl(0, 0%, 100%);
+  margin-top: 40px;
+  border-radius: 15px;
+}
+
+.amount-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tip-section h5 {
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.tip-section p {
+  font-size: 18px;
+  color: hsl(184, 14%, 56%);
+  font-weight: 500;
+}
+
+.tip-result {
+  display: flex;
+  align-items: center;
+}
+
+.tip-result {
+  color: hsl(172, 67%, 45%);
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.inactive button {
+  background: hsl(183, 87%, 18%);
+  font-family: "Space Mono";
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: hsl(183, 100%, 15%);
+  padding: 10px 0;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+}
+
+.attribution {
+  text-align: center;
+  font-size: 16px;
+  margin: 30px 0;
+}
+/* HOVER STATES */
+
+.tip-grid > *:hover {
+  background: hsl(185, 41%, 84%);
+  color: hsl(183, 100%, 15%);
+}
+
+.reset button .active:hover {
+  background: hsl(185, 41%, 84%);
+}
+
+/* ACTIVE CLASSES */
+
+.input-active,
+.active {
+  border: 1px solid hsl(183, 100%, 15%);
+}
+
+.custom-active {
+  border: 1px solid hsl(183, 100%, 15%);
+}
+
+.red-border-active {
+  border: 1px solid hsl(0, 75%, 47%);
+}
+
+.active button {
+  background: hsl(172, 67%, 45%);
+  font-family: "Space Mono";
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: hsl(183, 100%, 15%);
+  padding: 10px 0;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+@media (min-width: 600px) {
+  .container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    background: hsl(0, 0%, 100%);
+    width: 70%;
+    padding: 30px 30px 40px 30px;
+    margin-top: 30px;
+    border-radius: 20px;
+    font-size: 18px;
+  }
+
+  .calc-section {
+    width: 50%;
+    height: 100%;
+  }
+
+  .result-section {
+    width: 50%;
+    height: 100%;
+  }
+
+  .tip-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .tip-grid > * {
+    padding: 10px;
+    scrollbar-color: none;
+    font-size: 18px;
+  }
+
+  .result-section {
+    justify-content: space-around;
+  }
+
+  .second {
+    margin-top: -50px;
+  }
+}
