@@ -95,7 +95,7 @@ input[type="number"]::-webkit-outer-spin-button {
   border: none;
   width: calc(100% - 10px);
   font-family: "Space Mono";
-  font-size: 24px;
+  font-size: 30px;
   color: hsl(0, 0%, 100%);
   cursor: pointer;
 }
@@ -159,7 +159,7 @@ input[type="number"]::-webkit-outer-spin-button {
 
 .tip-result {
   color: hsl(172, 67%, 45%);
-  font-size: 30px;
+  font-size: 1.5rem;
   font-weight: 700;
 }
 
